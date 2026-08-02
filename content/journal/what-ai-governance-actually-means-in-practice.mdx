@@ -1,0 +1,16 @@
+---
+title: "What AI Governance Actually Means in Practice"
+date: "2026-02-18"
+tags: ["AI Governance", "Enterprise AI"]
+excerpt: "Governance isn't a policy document. It's the set of answers you can give when something goes wrong at 2am."
+---
+
+Ask most organisations about their AI governance and you'll get a policy document: acceptable use guidelines, a review committee, maybe a risk tiering framework. These aren't useless, but they're necessary rather than sufficient. The real test of governance is narrower and more operational: when an AI-influenced decision turns out to be wrong, can you reconstruct what happened, explain why, and fix it without guessing?
+
+That test breaks most governance programs immediately, because it requires infrastructure the policy document doesn't mention: versioned prompts and models, logged inputs and outputs, a record of which human reviewed or approved what, and a way to trace a specific bad outcome back to the specific system state that produced it. Without that, "governance" is a set of intentions with no way to verify whether they held.
+
+I think about governance in three layers. The policy layer sets intent — what the organisation will and won't allow AI to do autonomously. The technical layer makes that intent enforceable — access controls, logging, versioning, the ability to roll back a model or a prompt. The operational layer is what happens when something goes wrong — who's paged, what the escalation path is, how a customer-facing error gets corrected and disclosed. Most governance conversations stop at the policy layer because it's the easiest to write down. The technical and operational layers are where the real risk reduction happens, and they're the layers that require engineering time, not just a working group.
+
+The other pattern I've noticed: governance built after an incident is reactive and usually over-corrects, adding friction to everything rather than targeting the actual failure mode. Governance built alongside the initial deployment, scaled to the risk of each specific use case, tends to be lighter-weight and more durable, because it was designed against real failure scenarios instead of a worst-case hypothetical.
+
+If you're building an AI system for an enterprise customer, ask early what governance actually needs to look like operationally, not just what policy needs to say. That's usually the more expensive, more important half of the work.

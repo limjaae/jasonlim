@@ -1,0 +1,16 @@
+---
+title: "Designing AI Workflows: Keep Humans at the Decision, Not the Task"
+date: "2026-03-05"
+tags: ["AI Governance", "Product"]
+excerpt: "The question isn't whether a human is 'in the loop.' It's which loop they're in — the task loop or the decision loop."
+---
+
+"Human in the loop" gets used as a blanket reassurance in enterprise AI conversations, but it hides an important distinction: is the human reviewing individual task outputs, or are they making the decision the AI is informing? Those are very different governance postures, and conflating them leads to workflows that look safe on paper and aren't.
+
+A human reviewing every individual AI-generated task output — every draft email, every classified ticket, every extracted field — sounds rigorous, but it scales badly and breeds rubber-stamping. Reviewers under volume pressure stop reading carefully; they start pattern-matching on "does this look roughly right" instead of verifying it's actually right. That's not oversight, it's the appearance of oversight.
+
+The more durable design keeps humans at the decision layer: the AI does the aggregation, pattern detection, and option generation, and a human makes the call that actually matters — approve the transaction, escalate the incident, override the recommendation — with visibility into why the system suggested what it did. That's a smaller number of higher-stakes decisions, which means the human reviewing them can actually engage with the reasoning instead of skimming.
+
+This has direct implications for how you build the interface. If you want humans making good decisions, you need to surface the AI's reasoning and the underlying evidence, not just a confidence score. You need an easy path to disagree with the system that doesn't feel like fighting the tool. And you need to log both the recommendation and the human decision, because that log is what lets you audit whether the AI is actually earning trust over time or just being rubber-stamped.
+
+Good AI workflow design isn't about maximising the number of checkpoints. It's about putting the human where their judgment actually changes the outcome, and being honest about the difference between a checkpoint and theatre.

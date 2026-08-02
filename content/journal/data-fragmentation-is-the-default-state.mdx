@@ -1,0 +1,16 @@
+---
+title: "Data Fragmentation Is the Default State, Not the Exception"
+date: "2026-04-22"
+tags: ["Operations", "Data"]
+excerpt: "Plan for fifteen disconnected systems from day one. The organisations with clean, unified data are the exception, not the baseline."
+---
+
+Every enterprise deployment I've worked on has started from the same assumption on the vendor side and the same reality on the customer side. The assumption: there's a reasonably coherent set of source systems to integrate against. The reality: there are twelve to twenty systems, half of them undocumented, several of them held together by a scheduled export to a shared drive.
+
+This isn't a failure of the customer's IT organisation. It's the natural result of a company growing through acquisitions, regional rollouts, and a decade of "best tool for the job" purchasing decisions, each of which made sense in isolation. Fragmentation is what twenty years of reasonable decisions looks like from the outside.
+
+The mistake I see is designing an architecture that assumes fragmentation is a temporary, fixable state — that if you just get the customer to clean up their data first, integration becomes simple. That project never finishes, and it delays the value the deployment was supposed to deliver. The better approach is to design the system to be resilient to fragmentation from the start: an ingestion layer that tolerates inconsistent schemas, an entity resolution step that's treated as core functionality rather than a one-time migration task, and a data model that can represent "we don't actually know" as a valid state rather than forcing every field to resolve.
+
+Meridian Operations, one of the projects I've worked on, was built around exactly this premise — a connected ontology that traces impact across suppliers, ports, and orders specifically because the underlying data wasn't going to arrive clean or unified. The value showed up not by fixing the data first, but by building a system that could reason across it as it actually existed.
+
+If you're scoping an enterprise deployment, assume fragmentation is the baseline. Budget the integration effort accordingly, and treat "the data is messy" as a design input, not a blocker to raise in a status meeting.

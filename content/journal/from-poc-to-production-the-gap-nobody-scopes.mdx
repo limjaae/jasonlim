@@ -1,0 +1,16 @@
+---
+title: "From PoC to Production: the Gap Nobody Scopes"
+date: "2026-03-30"
+tags: ["Enterprise AI", "Deployment"]
+excerpt: "A proof of concept and a production system solve different problems. Most projects only budget for the first one."
+---
+
+A proof of concept has one job: prove the concept works. It's allowed to have a hardcoded config, a single tenant, no retry logic, and a demo dataset curated to avoid the ugly edge cases. That's not a criticism, it's the correct scope for a PoC. The problem is what happens after it succeeds.
+
+Success creates pressure to ship the PoC as-is, because it "already works." But a production system has to answer a different set of questions the PoC was explicitly built to avoid: what happens when the upstream data source is late, malformed, or unavailable? Who gets paged when it breaks? How does a new user get onboarded without an engineer in the room? What's the audit trail when a decision the system influenced gets challenged six months later?
+
+I've found it useful to treat "PoC to production" as its own project phase with its own scoping conversation, rather than an implementation detail tucked into the original timeline. That conversation should cover error handling and observability, access control and multi-tenancy if relevant, data governance and retention, and a realistic maintenance owner — because "the person who built the PoC" is not a sustainable answer.
+
+The organisations that navigate this well treat the PoC as a learning exercise about the problem, not a rough draft of the shipped system. They expect to rebuild significant parts of it once real constraints show up, and they budget time and credibility for that rebuild instead of treating it as scope creep. The ones that struggle are the ones who promised a production timeline based on PoC velocity, then discover the gap once it's already been committed to a stakeholder.
+
+If you're the person building the PoC, the most useful thing you can do for the eventual production system is be explicit, in writing, about exactly what the PoC is not handling. That list becomes the real scope of the next phase.
