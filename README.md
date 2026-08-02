@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jason Lim — Personal Site
 
-## Getting Started
+Personal site for Jason Lim, positioning him as a Deployment Strategist / Solution Engineer / Forward Deployed Engineer. Built with Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, React Three Fiber and MDX.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` — routes: homepage, `/projects` case studies, `/journal` Decision Journal (MDX)
+- `components/` — layout, hero, section, and case-study components
+- `content/journal/` — Decision Journal articles (MDX)
+- `lib/data/` — structured content for projects, experience, skills, interviews, mentors, community, awards
+- `lib/github.ts` — live GitHub repo/activity data (public REST API)
 
-## Learn More
+## Content that needs real assets before going live
 
-To learn more about Next.js, take a look at the following resources:
+- `public/resume.pdf` — currently a placeholder PDF, replace with the real resume
+- `public/images/headshot-placeholder.svg` — replace with a real professional photo and update the `src` in `components/hero/hero.tsx`
+- Decision Journal articles and Interview "Read insights" copy in `content/journal/` and `lib/data/interviews.ts` are first drafts — review before treating as final
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel via its native Git integration (push to `main` triggers a deploy). `.github/workflows/ci.yml` runs lint, type-check, and build on every push/PR as a CI gate.
