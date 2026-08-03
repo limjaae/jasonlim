@@ -10,11 +10,11 @@ export function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-md">
             <p className="font-heading text-lg font-semibold tracking-tight">
-              Let&apos;s talk about your operational problem.
+              Let&apos;s build the future of operational decision-making.
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
-              Open to Deployment Strategist, Solution Engineer, Customer Engineer
-              and Forward Deployed Engineer conversations.
+              I explore how data, AI and software can help organisations
+              solve complex problems and create measurable impact.
             </p>
             <a
               href={`mailto:${siteConfig.email}`}
@@ -92,7 +92,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-border/80 pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Jason Lim. Built with Next.js.</p>
-          <p>Available for enterprise deployment &amp; solution engineering roles</p>
+          <p>Building solutions at the intersection of technology, data and business outcomes.</p>
         </div>
       </div>
     </footer>

@@ -12,13 +12,14 @@ export const experience: ExperienceEntry[] = [
     role: "Government customers · AI adoption",
     focusAreas: [
       "Customer discovery",
+      "Enterprise Customers",
       "AI workshops",
       "Technical demonstrations",
       "PoCs",
       "Cross-functional collaboration",
     ],
     description:
-      "Worked directly with government customers on AI adoption, running discovery workshops to surface operational requirements, building and delivering technical demonstrations and proofs of concept, and coordinating across engineering, sales, and delivery teams to move AI initiatives from workshop to pilot.",
+      "Worked directly with government and enterprise customers on AI adoption, running discovery workshops to surface operational requirements, building and delivering technical demonstrations and proofs of concept, and coordinating across engineering, sales, and delivery teams to move AI initiatives from workshop to pilot.",
   },
   {
     org: "KPMG",
@@ -32,7 +33,7 @@ export const experience: ExperienceEntry[] = [
       "Regulation",
     ],
     description:
-      "Supported operational analytics and decision-support engagements in financial services, working at the intersection of risk, governance, and regulatory requirements — translating regulatory constraints into data and analytics designs that risk and compliance teams could sign off on.",
+      "Supported operational analytics and decision-support engagements in financial services, working at the intersection of risk, governance, and regulatory requirements, translating regulatory constraints into data and analytics designs that risk and compliance teams could sign off on.",
   },
   {
     org: "OpenOnion",
@@ -46,7 +47,7 @@ export const experience: ExperienceEntry[] = [
     role: "Founding team · Early-stage venture",
     focusAreas: ["Startup", "Product strategy", "Customer validation"],
     description:
-      "Co-building an early-stage fintech venture — product strategy, customer discovery with financial institutions, and go-to-market validation for a federated learning approach to inclusive lending.",
+      "Co-building an early-stage fintech venture: product strategy, customer discovery with financial institutions, and go-to-market validation for a federated learning approach to inclusive lending.",
     href: "/projects/sherlocked-ai",
   },
   {
@@ -54,6 +55,6 @@ export const experience: ExperienceEntry[] = [
     role: "Technology consulting",
     focusAreas: ["Technology consulting", "Customer communication", "Trust building"],
     description:
-      "Technology consulting role focused on customer communication and trust-building — translating technical constraints into terms non-technical stakeholders could act on, and vice versa.",
+      "Technology consulting role focused on customer communication and trust-building, translating technical constraints into terms non-technical stakeholders could act on, and vice versa.",
   },
 ];

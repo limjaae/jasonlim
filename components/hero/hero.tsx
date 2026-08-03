@@ -12,7 +12,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-8 lg:px-8 lg:py-28">
         <div>
           <p className="font-mono text-sm text-muted-foreground">
-            Jason Lim —{" "}
+            Jason Lim:{" "}
             <span className="inline-block min-h-[1.4em]">
               <TypingRoles />
             </span>

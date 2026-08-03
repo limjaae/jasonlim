@@ -18,11 +18,14 @@ export default function ProjectsIndexPage() {
         Case Studies
       </p>
       <h1 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-        Projects
+        Real world examples of translating complex operational challenges
+        into data driven solutions.
       </h1>
-      <p className="mt-4 max-w-xl text-muted-foreground text-pretty">
-        Documented like customer deployments — business problem, approach,
-        architecture, and outcome.
+      <p className="mt-4 max-w-2xl text-muted-foreground text-pretty">
+        Each case study explores the problem context, stakeholder needs,
+        data requirements, technical approach, implementation decisions and
+        business impact, demonstrating how I bridge the gap between users,
+        technology and outcomes.
       </p>
 
       <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">

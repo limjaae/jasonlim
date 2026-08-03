@@ -11,8 +11,8 @@ export function ProjectsPreview() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Case Studies"
-          title="Projects, presented as enterprise case studies"
-          description="Each project is documented the way I'd document a customer deployment: the business problem, the approach, the architecture, and the outcome — not just a repo link."
+          title="Real world examples of translating complex operational challenges into data driven solutions."
+          description="Each case study explores the problem context, stakeholder needs, data requirements, technical approach, implementation decisions and business impact, demonstrating how I bridge the gap between users, technology and outcomes."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">

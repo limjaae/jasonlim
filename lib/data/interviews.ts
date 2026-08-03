@@ -15,7 +15,7 @@ export const interviews: Interview[] = [
     takeaway:
       "Countries need sovereign AI capabilities to remain globally competitive as access to frontier models becomes increasingly strategic.",
     insight:
-      "Hugh's framing reset how I think about AI strategy at the national level, not just the enterprise level. As frontier model access becomes a lever of geopolitical and economic power, countries that treat AI purely as a procurement decision risk permanent dependency on a handful of foreign labs. Sovereign capability doesn't mean building a competitor to the frontier labs from scratch, it means owning enough of the stack — compute, data, talent, deployment expertise — to negotiate from a position of strength. That's a deployment problem as much as a research problem, and it's part of why I think about AI adoption in terms of infrastructure and institutional capability, not just model quality.",
+      "Hugh's framing reset how I think about AI strategy at the national level, not just the enterprise level. As frontier model access becomes a lever of geopolitical and economic power, countries that treat AI purely as a procurement decision risk permanent dependency on a handful of foreign labs. Sovereign capability doesn't mean building a competitor to the frontier labs from scratch, it means owning enough of the stack (compute, data, talent, deployment expertise) to negotiate from a position of strength. That's a deployment problem as much as a research problem, and it's part of why I think about AI adoption in terms of infrastructure and institutional capability, not just model quality.",
     tags: ["Enterprise AI", "Governance"],
   },
   {
@@ -49,12 +49,22 @@ export const interviews: Interview[] = [
     tags: ["Engineering", "Product"],
   },
   {
+    speaker: "Sally Bridgland",
+    role: "Head of Enablement & Change",
+    organisation: "Oreana Partnerships",
+    takeaway:
+      "Real productivity gains from AI require organisations to invest in upskilling people to effectively supervise AI-generated work.",
+    insight:
+      "Sally's perspective comes from the change-management side, which is the piece most technical AI conversations skip. Deploying a capable model doesn't automatically create a capable organisation, because someone still has to know when AI output is wrong, incomplete, or subtly miscalibrated for the business context. The gains show up when a company invests as much in training people to supervise and question AI work as it does in the AI itself. Otherwise you've just added a new tool that nobody is equipped to hold accountable.",
+    tags: ["Leadership", "Operations"],
+  },
+  {
     speaker: "Sam",
     role: "Forward Deployed Engineer",
     takeaway:
       "Forward Deployed Engineers connect customer workflows, data and technology to solve operational problems.",
     insight:
-      "This conversation is close to the core of how I think about the FDE role. Sam's point is that the job isn't “build the feature the customer asked for,” it's understanding the operational workflow well enough to know what they should be asking for. That means sitting with the data as it actually exists — messy, fragmented, half-documented — and being fluent enough in both the business process and the technology to close the gap directly, instead of relaying requirements back and forth between a customer and a product team that never sees the workflow firsthand.",
+      "This conversation is close to the core of how I think about the FDE role. Sam's point is that the job isn't “build the feature the customer asked for,” it's understanding the operational workflow well enough to know what they should be asking for. That means sitting with the data as it actually exists (messy, fragmented, half-documented) and being fluent enough in both the business process and the technology to close the gap directly, instead of relaying requirements back and forth between a customer and a product team that never sees the workflow firsthand.",
     tags: ["Engineering", "Operations"],
   },
   {
@@ -72,17 +82,7 @@ export const interviews: Interview[] = [
     takeaway:
       "The future belongs to engineers who combine full-stack engineering with AI to automate operational work.",
     insight:
-      "Wilson's view is one I've come to agree with from the enterprise side: the most valuable engineers now aren't purely backend, frontend, or ML specialists, they're generalists who can trace an operational problem end to end and use AI as leverage at every step, from data wrangling to interface to deployment. That combination — full-stack fluency plus AI-native workflows — is what lets a small team automate work that used to require a much larger one, and it's a big part of why I've deliberately kept my own skill set broad rather than narrowing into one layer of the stack.",
+      "Wilson's view is one I've come to agree with from the enterprise side: the most valuable engineers now aren't purely backend, frontend, or ML specialists, they're generalists who can trace an operational problem end to end and use AI as leverage at every step, from data wrangling to interface to deployment. That combination, full-stack fluency plus AI-native workflows, is what lets a small team automate work that used to require a much larger one, and it's a big part of why I've deliberately kept my own skill set broad rather than narrowing into one layer of the stack.",
     tags: ["Engineering", "Enterprise AI"],
-  },
-  {
-    speaker: "Sally Bridgland",
-    role: "Head of Enablement & Change",
-    organisation: "Oreana Partnerships",
-    takeaway:
-      "Real productivity gains from AI require organisations to invest in upskilling people to effectively supervise AI-generated work.",
-    insight:
-      "Sally's perspective comes from the change-management side, which is the piece most technical AI conversations skip. Deploying a capable model doesn't automatically create a capable organisation, because someone still has to know when AI output is wrong, incomplete, or subtly miscalibrated for the business context. The gains show up when a company invests as much in training people to supervise and question AI work as it does in the AI itself — otherwise you've just added a new tool that nobody is equipped to hold accountable.",
-    tags: ["Leadership", "Operations"],
   },
 ];

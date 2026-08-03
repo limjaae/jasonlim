@@ -11,7 +11,7 @@ export function InterviewCard({ interview }: { interview: Interview }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className="h-fit p-5">
+    <Card className="flex h-full flex-col p-5">
       <h3 className="font-heading text-base font-semibold">{interview.speaker}</h3>
       <p className="text-sm text-muted-foreground">
         {interview.role}

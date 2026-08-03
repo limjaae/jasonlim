@@ -13,7 +13,7 @@ export function JournalPreview() {
           <SectionHeading
             eyebrow="Decision Journal"
             title="Structured thinking, in writing"
-            description="Practical notes on enterprise AI adoption, customer discovery, governance, and shipping enterprise products — instead of a blog about frameworks."
+            description="Practical notes on enterprise AI adoption, customer discovery, governance, and shipping enterprise products, instead of a blog about frameworks."
           />
           <Link
             href="/journal"

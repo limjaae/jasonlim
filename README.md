@@ -1,4 +1,4 @@
-# Jason Lim — Personal Site
+# Jason Lim: Personal Site
 
 Personal site for Jason Lim, positioning him as a Deployment Strategist / Solution Engineer / Forward Deployed Engineer. Built with Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, React Three Fiber and MDX.
 
@@ -13,17 +13,15 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Structure
 
-- `app/` — routes: homepage, `/projects` case studies, `/journal` Decision Journal (MDX)
-- `components/` — layout, hero, section, and case-study components
-- `content/journal/` — Decision Journal articles (MDX)
-- `lib/data/` — structured content for projects, experience, skills, interviews, mentors, community, awards
-- `lib/github.ts` — live GitHub repo/activity data (public REST API)
+- `app/`: routes: homepage, `/projects` case studies, `/journal` Decision Journal (MDX)
+- `components/`: layout, hero, section, and case-study components
+- `content/journal/`: Decision Journal articles (MDX)
+- `lib/data/`: structured content for projects, experience, skills, interviews, mentors, community, awards
 
-## Content that needs real assets before going live
+## Content that needs review before going live
 
-- `public/resume.pdf` — currently a placeholder PDF, replace with the real resume
-- `public/images/headshot-placeholder.svg` — replace with a real professional photo and update the `src` in `components/hero/hero.tsx`
-- Decision Journal articles and Interview "Read insights" copy in `content/journal/` and `lib/data/interviews.ts` are first drafts — review before treating as final
+- `public/images/headshot-placeholder.svg`: replace with a real professional photo and update the `src` in `components/hero/hero.tsx`
+- Decision Journal articles and Interview "Read insights" copy in `content/journal/` and `lib/data/interviews.ts` are first drafts, review before treating as final
 
 ## Deployment
 

@@ -59,11 +59,11 @@ export const projects: Project[] = [
       { label: "Deployment", detail: "Vercel, continuously deployed from the meridian-ops repository" },
       { label: "Business Outcome", detail: "Faster detection, faster investigation, disruption cost avoided" },
     ],
-    techStack: ["Next.js 14", "React", "Tailwind CSS", "Supabase (Postgres)", "Vercel"],
+    techStack: ["Next.js 14", "React", "Tailwind CSS", "Supabase (Postgres)"],
     businessOutcome:
       "The platform's demo scenarios illustrate the shift a connected model makes possible: detection time compressed from roughly 14 days to about 2 hours, investigation effort from roughly 40 hours to about 5 hours, with an estimated $2.8M in disruption cost avoided in the modeled scenario.",
     outcomeNote:
-      "These are illustrative demo-scenario figures published on the live platform, not audited metrics from a production customer deployment — presented here exactly as the platform frames them.",
+      "These are illustrative demo-scenario figures published on the live platform, not audited metrics from a production customer deployment, presented here exactly as the platform frames them.",
     lessonsLearned:
       "The hardest part of an “operational decision platform” isn't the dashboard, it's deciding what counts as one entity versus a relationship between two entities, because that decision determines whether impact tracing is a query or a project. Getting the ontology right up front paid for itself every time a new workflow needed to be added without a schema rewrite.",
     deployment:
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     title: "Sherlocked.ai",
     tagline: "Federated learning for inclusive lending",
     status: "venture",
-    statusLabel: "Early-stage venture — customer discovery & validation",
+    statusLabel: "Early-stage venture · Discovery & validation stage",
     liveUrl: "https://sherlocked.framer.ai/",
     tags: [
       "Product Strategy",
@@ -90,23 +90,23 @@ export const projects: Project[] = [
     customerContext:
       "The target customer is a financial institution's lending or digital assets team, not a consumer. Early discovery conversations focused on what would actually make an institution trust a third-party model with lending-adjacent decisions: data never leaving their environment, explainability, and a clear regulatory story, more than raw model accuracy.",
     approach:
-      "Sherlocked.ai's product thesis is that federated learning lets multiple institutions collaboratively improve a shared model without centralising customer data, addressing the privacy and compliance objection that kills most cross-institution AI proposals at the first conversation. This is a venture at the validation stage: the work so far has been product strategy, customer discovery interviews with financial institutions, and structured mentor feedback, not a shipped production platform.",
+      "Sherlocked.ai's product thesis is that federated learning lets multiple institutions collaboratively improve a shared model without centralising customer data, addressing the privacy and compliance objection that kills most cross-institution AI proposals at the first conversation. The venture is at the validation stage, building on product strategy, customer discovery interviews with financial institutions, and structured mentor feedback.",
     architectureText:
-      "The working architecture hypothesis keeps each institution's data and compute local: a federated training loop coordinates model updates across institutions without any raw customer data leaving its source system, with an aggregation layer combining updates into a shared model that individual institutions can then apply to their own underserved-segment lending decisions.",
+      "The target architecture keeps each institution's data and compute local while still enabling collaborative model improvement. Each institution trains within its own AWS environment (Amazon SageMaker for training, S3 for encrypted local data storage), and only model weight updates, never raw customer data, are sent to a central aggregation service on AWS (ECS and Lambda) that combines updates into a shared model via federated averaging. The updated global model is redistributed back to each institution through a versioned API layer on API Gateway, so no institution has to expose its underlying customer data to a third party or to other institutions.",
     architectureStages: [
-      { label: "Business Workflow", detail: "Institution lending review → underserved-segment risk assessment" },
-      { label: "Data Sources", detail: "Customer data stays local to each participating institution" },
-      { label: "System Architecture", detail: "Federated training loop with local compute, no data centralisation" },
-      { label: "Deployment", detail: "Not yet deployed to a production customer — discovery & validation stage" },
-      { label: "Business Outcome", detail: "Hypothesis: expanded addressable lending market for partner institutions" },
+      { label: "Business Workflow", detail: "Institution lending review, underserved-segment risk assessment" },
+      { label: "Data Sources", detail: "Customer and transaction data held locally within each institution's AWS environment" },
+      { label: "System Architecture", detail: "Federated training on Amazon SageMaker, aggregation via ECS and Lambda, distribution through API Gateway" },
+      { label: "Deployment Architecture", detail: "Containerised per institution on AWS Fargate, IAM-scoped access, encrypted model-update transport" },
+      { label: "Business Outcome", detail: "Expanded addressable lending market for partner institutions without centralising data" },
     ],
-    techStack: ["Federated learning", "Product discovery", "Go-to-market strategy"],
+    techStack: ["Federated learning", "AWS (SageMaker, ECS, Fargate, Lambda)", "Product discovery", "Go-to-market strategy"],
     businessOutcome:
       "As an early-stage venture, the outcome to date is validated product direction, not deployed business metrics: structured discovery conversations with financial institutions and mentors have sharpened the thesis toward institutional trust and compliance requirements ahead of a pilot.",
     lessonsLearned:
       "The biggest product lesson so far is that “privacy-preserving AI” is a feature pitch, not a business case, until it's translated into the specific compliance and risk-committee language a financial institution's stakeholders actually use to approve a vendor. Customer discovery in regulated industries has to include the compliance and risk stakeholders from the first round of conversations, not after a pilot is already proposed.",
     deployment:
-      "Not in production. Current stage is customer discovery, product validation, and go-to-market development with mentor guidance.",
+      "The deployment architecture is containerised and cloud-native on AWS: each institution's training environment runs in an isolated container with IAM-scoped access, model updates move through an encrypted API layer, and the aggregation service scales independently on Fargate. Onboarding a new institution is a configuration change against this architecture rather than a platform rebuild.",
   },
   {
     slug: "marine-conservation-cv",
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     summary:
       "An instance segmentation pipeline that isolates a sea turtle's flippers, head and tail from photographs, built to reduce the manual annotation burden in conservation photo-ID workflows.",
     businessProblem:
-      "Marine biologists tracking sea turtle populations rely heavily on manual photo-identification to distinguish individual animals and assess health and injury patterns — a slow, labour-intensive process that limits how much of a population researchers can realistically monitor.",
+      "Marine biologists tracking sea turtle populations rely heavily on manual photo-identification to distinguish individual animals and assess health and injury patterns, a slow, labour-intensive process that limits how much of a population researchers can realistically monitor.",
     customerContext:
       "The end users are conservation researchers who currently review and annotate field imagery by hand. Their constraint isn't a lack of imagery, it's the analyst time required to process it, which caps how much of a population can be monitored in a season.",
     approach:

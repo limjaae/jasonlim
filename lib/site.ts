@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Jason Lim",
-  title: "Jason Lim — Deployment Strategist, Solution Engineer & Forward Deployed Engineer",
+  title: "Jason Lim: Deployment Strategist, Solution Engineer & Forward Deployed Engineer",
   description:
-    "Jason Lim helps organisations turn complex operational challenges into data-driven decisions — combining customer discovery, product thinking and technical implementation across enterprise AI deployments.",
+    "Jason Lim helps organisations turn complex operational challenges into data-driven decisions, combining customer discovery, product thinking and technical implementation across enterprise AI deployments.",
   url: "https://jasonlimtech.vercel.app",
   email: "limjason888@gmail.com",
   github: "https://github.com/limjaae",

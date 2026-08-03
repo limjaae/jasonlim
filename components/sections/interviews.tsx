@@ -9,10 +9,10 @@ export function Interviews() {
         <SectionHeading
           eyebrow="Interviews About AI"
           title="Practical insights from founders, executives and engineers"
-          description="Conversations with people building and deploying AI in the real world — condensed into one takeaway each."
+          description="Conversations with people building and deploying AI in the real world, condensed into one takeaway each."
         />
 
-        <div className="mt-12 grid grid-cols-1 items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {interviews.map((interview) => (
             <InterviewCard key={interview.speaker} interview={interview} />
           ))}

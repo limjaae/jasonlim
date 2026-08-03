@@ -41,7 +41,7 @@ export function TechnicalExpertise() {
             Enterprise Skills Matrix
           </h3>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-            The emphasis is on evidence, not technology — where each capability was
+            The emphasis is on evidence, not technology: where each capability was
             actually exercised.
           </p>
           <div className="mt-6 overflow-hidden rounded-xl border border-border">
