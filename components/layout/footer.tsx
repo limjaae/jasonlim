@@ -81,7 +81,7 @@ export function Footer() {
               </p>
               <ul className="mt-3 space-y-2 text-sm">
                 <li>
-                  <a href={siteConfig.resumeHref} download className="hover:text-brand">
+                  <a href={siteConfig.resumeHref} download={siteConfig.resumeFilename} className="hover:text-brand">
                     Download PDF
                   </a>
                 </li>

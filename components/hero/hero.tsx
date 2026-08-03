@@ -44,7 +44,7 @@ export function Hero() {
               variant="outline"
               className="h-11 px-5"
               nativeButton={false}
-              render={<a href={siteConfig.resumeHref} download />}
+              render={<a href={siteConfig.resumeHref} download={siteConfig.resumeFilename} />}
             >
               <Download className="size-4" />
               Download Resume

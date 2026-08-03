@@ -9,6 +9,7 @@ export const siteConfig = {
   githubUsername: "limjaae",
   linkedin: "https://www.linkedin.com/in/jason-lim-8b8742221/",
   resumeHref: "/resume.pdf",
+  resumeFilename: "Resume - Jason Lim.pdf",
   keywords: [
     "Deployment Strategist",
     "Solution Engineer",

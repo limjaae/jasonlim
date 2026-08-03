@@ -48,7 +48,7 @@ export function Header() {
           <Button
             size="sm"
             nativeButton={false}
-            render={<a href={siteConfig.resumeHref} download />}
+            render={<a href={siteConfig.resumeHref} download={siteConfig.resumeFilename} />}
           >
             Resume
           </Button>
@@ -84,7 +84,7 @@ export function Header() {
                 <Button
                   className="mt-3"
                   nativeButton={false}
-                  render={<a href={siteConfig.resumeHref} download />}
+                  render={<a href={siteConfig.resumeHref} download={siteConfig.resumeFilename} />}
                 >
                   Download Resume
                 </Button>
