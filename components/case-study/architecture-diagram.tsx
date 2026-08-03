@@ -19,10 +19,10 @@ export function ArchitectureDiagram({ stages }: { stages: ArchitectureStage[] })
               <p className="font-mono text-[0.65rem] uppercase tracking-widest text-brand">
                 {String(i + 1).padStart(2, "0")}
               </p>
-              <p className="mt-1.5 font-heading text-sm font-semibold">
+              <p className="mt-1.5 font-heading text-sm font-semibold break-words">
                 {stage.label}
               </p>
-              <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground break-words">
                 {stage.detail}
               </p>
             </div>
