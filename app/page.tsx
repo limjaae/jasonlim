@@ -3,7 +3,6 @@ import { HowISolveProblems } from "@/components/sections/how-i-solve-problems";
 import { ProjectsPreview } from "@/components/sections/projects-preview";
 import { EnterpriseExperience } from "@/components/sections/enterprise-experience";
 import { TechnicalExpertise } from "@/components/sections/technical-expertise";
-import { OpenSource } from "@/components/sections/open-source";
 import { JournalPreview } from "@/components/sections/journal-preview";
 import { Interviews } from "@/components/sections/interviews";
 import { Community } from "@/components/sections/community";
@@ -19,7 +18,6 @@ export default function Home() {
       <ProjectsPreview />
       <EnterpriseExperience />
       <TechnicalExpertise />
-      <OpenSource />
       <JournalPreview />
       <Interviews />
       <Community />
