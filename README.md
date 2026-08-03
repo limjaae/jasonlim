@@ -20,7 +20,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Content that needs review before going live
 
-- `public/images/headshot-placeholder.svg`: replace with a real professional photo and update the `src` in `components/hero/hero.tsx`
 - Decision Journal articles and Interview "Read insights" copy in `content/journal/` and `lib/data/interviews.ts` are first drafts, review before treating as final
 
 ## Deployment

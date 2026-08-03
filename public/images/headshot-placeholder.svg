@@ -1,7 +1,0 @@
-<svg width="480" height="600" viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder headshot for Jason Lim">
-  <rect width="480" height="600" fill="#111113"/>
-  <circle cx="240" cy="250" r="96" fill="#1d2128"/>
-  <text x="240" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="600" fill="#6C9BFF">JL</text>
-  <text x="240" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7a7d85">Replace with professional photo</text>
-  <text x="240" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#55575e">public/images/headshot.jpg</text>
-</svg>

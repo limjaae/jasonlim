@@ -54,7 +54,7 @@ export function Hero() {
           <div className="mt-14 flex items-center gap-4">
             <div className="relative size-14 shrink-0 overflow-hidden rounded-full ring-1 ring-border">
               <Image
-                src="/images/headshot-placeholder.svg"
+                src="/images/headshot.jpg"
                 alt="Jason Lim"
                 fill
                 sizes="56px"
