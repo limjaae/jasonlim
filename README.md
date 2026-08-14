@@ -2,11 +2,11 @@
 
 Thanks for visiting my page. 
 
-Hi, I am Jason! In my page, I share my about the story of my professional background and how it has shaped me to be the Deployment Strategist, Solution Engineer, and Forward Deployed Engineer that I am today.
+Hi, I am Jason! On my page, I share the story of my professional background and how it has shaped me into the Deployment Strategist, Solution Engineer, and Forward Deployed Engineer that I am today.
 
 It includes my technical portfolio that walks through the architecture diagram and live links.
 
-I also write technical blogs and interview leaders in the AI and transformation space which can be found there.
+I also write technical blogs and interview leaders in the AI and transformation space, which can be found there.
 
 My portfolio can be visited here: **[jasonlimtech.vercel.app](https://jasonlimtech.vercel.app)**
 
