@@ -1,6 +1,8 @@
 # Jason Lim: Personal Site
 
-Personal site for Jason Lim, positioning him as a Deployment Strategist / Solution Engineer / Forward Deployed Engineer. Built with Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, React Three Fiber and MDX.
+**[jasonlimtech.vercel.app](https://jasonlimtech.vercel.app)** — the personal site and technical portfolio for Jason Lim (Deployment Strategist / Solution Engineer / Forward Deployed Engineer). Built as a full production application rather than a template: a custom design system with dark/light theming, an MDX-backed writing pipeline (Decision Journal), and enterprise-style case studies for four real projects, each with its own architecture diagram, including a live, working voice AI agent with a webhook tool calling a production database end to end.
+
+**Stack**: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · shadcn/ui · Framer Motion · React Three Fiber · MDX · Vercel
 
 ## Getting started
 
