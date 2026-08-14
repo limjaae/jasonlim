@@ -1,6 +1,16 @@
-# Jason Lim: Personal Site
+# Jason Lim: Portfolios
 
-**[jasonlimtech.vercel.app](https://jasonlimtech.vercel.app)** — the personal site and technical portfolio for Jason Lim (Deployment Strategist / Solution Engineer / Forward Deployed Engineer). Built as a full production application rather than a template: a custom design system with dark/light theming, an MDX-backed writing pipeline (Decision Journal), and enterprise-style case studies for four real projects, each with its own architecture diagram, including a live, working voice AI agent with a webhook tool calling a production database end to end.
+Thanks for visiting my page. 
+
+Hi, I am Jason! In my page, I share my about the story of my professional background and how it has shaped me to be the Deployment Strategist, Solution Engineer, and Forward Deployed Engineer that I am today.
+
+It includes my technical portfolio that walks through the architecture diagram and live links.
+
+I also write technical blogs and interview leaders in the AI and transformation space which can be found there.
+
+My portfolio can be visited here: **[jasonlimtech.vercel.app](https://jasonlimtech.vercel.app)**
+
+Have a great day!
 
 **Stack**: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · shadcn/ui · Framer Motion · React Three Fiber · MDX · Vercel
 
@@ -19,10 +29,6 @@ Open [http://localhost:3000](http://localhost:3000).
 - `components/`: layout, hero, section, and case-study components
 - `content/journal/`: Decision Journal articles (MDX)
 - `lib/data/`: structured content for projects, experience, skills, interviews, mentors, community, awards
-
-## Content that needs review before going live
-
-- Decision Journal articles and Interview "Read insights" copy in `content/journal/` and `lib/data/interviews.ts` are first drafts, review before treating as final
 
 ## Deployment
 
