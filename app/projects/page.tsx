@@ -8,7 +8,7 @@ import { projects } from "@/lib/data/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Enterprise case studies covering operational decision platforms, early-stage AI venture strategy, and applied computer vision research.",
+    "Enterprise case studies covering operational decision platforms, early-stage AI venture strategy, applied computer vision research, and a production voice AI agent.",
 };
 
 export default function ProjectsIndexPage() {
@@ -28,7 +28,7 @@ export default function ProjectsIndexPage() {
         technology and outcomes.
       </p>
 
-      <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {projects.map((project) => (
           <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
             <Card className="h-full ring-foreground/10 transition-colors group-hover:ring-brand/40">

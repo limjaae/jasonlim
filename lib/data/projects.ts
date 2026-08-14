@@ -1,4 +1,4 @@
-export type ProjectStatus = "production-demo" | "venture" | "research";
+export type ProjectStatus = "production-demo" | "venture" | "research" | "live";
 
 export interface ArchitectureStage {
   label: string;
@@ -140,6 +140,45 @@ export const projects: Project[] = [
       "Comparing single-stage and multi-stage segmentation on the same dataset made it clear that decomposing a hard vision problem into simpler sub-problems, background removal then part segmentation, often trades training complexity for more interpretable failure modes, which matters when the end users are domain experts who need to trust and sanity-check the output.",
     deployment:
       "Research codebase (Jupyter notebooks), not deployed as a production service. Code and methodology are open on GitHub.",
+  },
+  {
+    slug: "order-status-voice-agent",
+    title: "Order Status Voice Agent",
+    tagline: "Conversational voice AI for order status lookups",
+    status: "live",
+    statusLabel: "Live voice AI agent",
+    liveUrl: "https://order-status-voice-agent-widget.vercel.app/",
+    githubUrl: "https://github.com/limjaae/Order-Status-Voice-Agent",
+    tags: [
+      "Voice AI",
+      "Conversational AI",
+      "Multi-tenant Architecture",
+      "Data Integration",
+    ],
+    summary:
+      "A multi-language voice AI agent that answers order-status questions in real time by calling a live webhook tool against a Supabase database, built to demonstrate full-stack integration from conversational AI through to production data.",
+    businessProblem:
+      "Order status is the single most repeated question in e-commerce support: high volume, low complexity, and fully answerable from data the business already has, making it a strong fit for a voice agent and a poor use of a human agent's time.",
+    customerContext:
+      "Built for two distinct users: the end customer calling to check an order in one of five languages without navigating a phone menu, and the recruiter or engineer evaluating the project with well under two minutes to judge whether it demonstrates real integration and architecture skill rather than a scripted demo.",
+    approach:
+      "The agent greets the caller, confirms which of three demo stores they ordered from, accepts a preferred language, then asks for an order number or checkout email. It calls a look_up_order webhook tool registered directly on the agent, which queries a live Postgres table on Supabase scoped to that store, and reads the result back in natural spoken language: processing, shipped with carrier and tracking number, or delivered.",
+    architectureText:
+      "A single shared orders table and a single shared webhook tool serve three separate demo stores, with store passed as a required parameter on every lookup rather than standing up three separate deployments. The ElevenLabs agent calls the look_up_order tool, which hits a stateless FastAPI endpoint on Vercel that queries Supabase Postgres with row-level security enabled and an explicit grant to the service role.",
+    architectureStages: [
+      { label: "Business Workflow", detail: "Caller states store and language, then order number or checkout email" },
+      { label: "Data Sources", detail: "Supabase Postgres orders table, 30 seed rows across 3 stores, RLS with service_role grant" },
+      { label: "System Architecture", detail: "ElevenLabs Conversational AI agent calls the look_up_order webhook tool" },
+      { label: "Deployment", detail: "Stateless FastAPI backend and widget on Vercel" },
+      { label: "Business Outcome", detail: "Voice to tool to live database to spoken response, verified end to end" },
+    ],
+    techStack: ["ElevenLabs Conversational AI", "FastAPI", "Python", "Vercel", "Supabase (Postgres)"],
+    businessOutcome:
+      "The full path, voice to tool to live database to spoken response, works end to end and is verified against real Supabase rows rather than mocked data. The agent handles three demo stores and five languages through one shared schema and one shared tool, and the project is documented well enough, via a case study and a self-service integration guide, to be legible to someone outside the build in under a minute.",
+    lessonsLearned:
+      "Every major failure hit while building this got found and fixed rather than worked around, and each one was a different category of mistake: a tool that was silently never attached to the agent because it lived in the workspace tool library but not in the agent's own tool_ids; a valid API key rejected by an outdated client library; Postgres RLS policies that were configured correctly but useless because the base table grant to service_role was missing, since RLS alone doesn't grant table access; and turn-taking settings that needed retuning so the agent stopped interrupting callers or looping on unclear answers.",
+    deployment:
+      "FastAPI backend and widget both deployed on Vercel, with the agent itself hosted on ElevenLabs and reachable via a standalone web widget or an ElevenLabs dashboard test call. There's no real phone number: Twilio integration was a deliberate cost decision, not a limitation hit by accident, and the agent's spoken promise to hand off to a human on a failed lookup is not yet backed by a real handoff.",
   },
 ];
 

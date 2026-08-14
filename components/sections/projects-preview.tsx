@@ -15,7 +15,7 @@ export function ProjectsPreview() {
           description="Each case study explores the problem context, stakeholder needs, data requirements, technical approach, implementation decisions and business impact, demonstrating how I bridge the gap between users, technology and outcomes."
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
               <Card className="h-full ring-foreground/10 transition-colors group-hover:ring-brand/40">
